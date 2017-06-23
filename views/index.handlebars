@@ -1,0 +1,26 @@
+<script type='text/javascript' src='{{DEPLOYMENT_URL}}'></script>
+<script type='text/javascript'>
+	liveagent.init('{{CHAT_URL}}', '{{CHAT_KEY_ONE}}', '{{CHAT_KEY_TWO}}');
+</script>
+
+<div class="jumbotron">
+	<h1>GAP</h1>
+	<h2>Live Assist</h2>
+	<p>Welcome Customer, We've now made it easy for you to reach out to our GAP Assist Specialist who will be able to help you for any queries. Please NOTE : Below will be a button that will be disabled if nobody is logged into the chat console.  If it's enabled the button will be clickable</p>
+<p>Thank you & Have a Great Day ahead !</p>
+</div>
+<div>
+	<a id="liveagent_button_online_{{CHAT_KEY_BUTTON}}" href="javascript://Chat" style="display: none;" class="btn btn-primary" onclick="liveagent.startChat('{{CHAT_KEY_BUTTON}}')">Online</a>
+	<a id="liveagent_button_offline_{{CHAT_KEY_BUTTON}}" style="display: none;" class="btn btn-default" disabled="disabled">Offline</div>
+</div>
+
+<script type="text/javascript">
+	if (!window._laq) {
+		window._laq = [];
+	}
+
+	window._laq.push(function () {
+		liveagent.showWhenOnline('{{CHAT_KEY_BUTTON}}', document.getElementById('liveagent_button_online_{{CHAT_KEY_BUTTON}}'));
+		liveagent.showWhenOffline('{{CHAT_KEY_BUTTON}}', document.getElementById('liveagent_button_offline_{{CHAT_KEY_BUTTON}}'));
+	});
+</script>
