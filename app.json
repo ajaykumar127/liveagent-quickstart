@@ -1,8 +1,8 @@
 {
-    "name": "Liveagent quickstart",
+    "name": "GAP Live Agent",
     "description": "A quickstart app to spin up a site with a Liveagent chat button",
-    "website": "https://github.com/pcon/liveagent-quickstart",
-    "repository": "https://github.com/pcon/liveagent-quickstart",
+    "website": "https://github.com/ajaykumar127/liveagent-quickstart",
+    "repository": "https://github.com/ajaykumar127/liveagent-quickstart/",
     "logo": "https://raw.githubusercontent.com/pcon/liveagent-quickstart/master/assets/logo.svg",
     "keywords": ["node", "express", "liveagent", "quickstart"],
     "image": "heroku/nodejs",
